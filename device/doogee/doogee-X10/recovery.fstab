@@ -1,0 +1,15 @@
+# mount point       fstype    device                                                                flags
+/data               ubifs     ubi@userdata                                                          flags=display="Data";logical;
+/system             ubifs     ubi@system                                                            flags=display="System";backup=1;logical;
+/system_image       emmc      ubi@system                                                            flags=display="System image";backup=1;flashimg=1;logical;
+/cache              ubifs     /dev/ubi0_1                                                           flags=display="Cache";
+/protect_f          rawfs     mtd@protect_f                                                         flags=display="Protect_f";logical;
+/protect_s          none      /protect_f                                                            flags=display="Protect_s";
+/nvcfg              rawfs     mtd@nvcfg                                                             flags=display="Nvcfg";logical;
+/boot               mtd       mtd@boot                                                              flags=display="Boot";backup=1;flashimg=1;logical;
+/recovery           mtd       mtd@recovery                                                          flags=display="Recovery";backup=1;flashimg=1;logical;
+/misc               mtd       mtd@misc                                                              flags=display="Misc";backup=1;flashimg=1;logical;
+/logo               mtd       mtd@logo                                                              flags=display="Logo";logical;
+/uboot              mtd       mtd@uboot                                                             flags=display="Uboot";logical;
+/11130000.msdc1*    auto      auto                                                                  flags=display="11130000.msdc1*";logical;
+/mt_usb*            auto      vfat                                                                  flags=display="Mt_usb*";logical;

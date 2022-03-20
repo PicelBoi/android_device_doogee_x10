@@ -1,0 +1,3 @@
+on init
+    insmod /lib/modules/ubi.ko
+    insmod /lib/modules/ubifs.ko
