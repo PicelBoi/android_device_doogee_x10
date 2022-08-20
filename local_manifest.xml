@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!-- kudos to karaan2354 -->
+<!-- Remotes -->
+
+        <remote name="me"
+                fetch="https://github.com/PicelBoi" />
+            
+<!-- Device Trees -->
+    
+        <project path="device/doogee/x10" name="PicelBoi/android_device_doogee_x10" remote="me" revision="4.4" />   
+    
+<!-- Kernel Tree -->
+    
+        <project path="kernel/doogee/x10" name="android_kernel_doogee_x10" remote="me" revision="4.4"  clone-depth="1" />
+           
+<!-- Vendor Trees -->
+    
+        <project path="vendor/doogee/x10"  name="android_vendor_doogee_x10" remote="me" revision="12.1"  /> 
+   
+
+	
+
+
+</manifest>
